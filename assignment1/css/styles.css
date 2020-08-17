@@ -1,0 +1,93 @@
+body {
+	font-family: sans-serif;
+	padding: 2.5%;
+}
+
+.title {
+	text-align: center;
+	font-size: 2.75em;
+	padding-bottom: 3%;
+}
+
+.box {
+	background-color: #999999;
+	position: relative;
+	top: 0px;
+	right: 0px;
+	border: 1px #000000 solid;
+	margin-bottom: 2%;
+	box-sizing: border-box;
+}
+
+.title_box {
+	float: right;
+	font-size: 1.25em;
+	padding: 10px;
+	width: 125px;
+	text-align: center;
+	border-bottom: 1px #000000 solid;
+	border-left: 1px #000000 solid;
+	box-sizing: border-box;
+}
+
+/* generalized for multiples of 3 */
+.box:nth-child(3n+1) > .title_box {
+	background-color: #D59898;
+}
+
+.box:nth-child(3n+2) > .title_box {
+	background-color: #C14543;
+	color: white;
+}
+
+.box:nth-child(3n+3) > .title_box {
+	background-color: #E5D198;
+}
+
+.text {
+	padding: 20px;
+	float: right;
+}
+
+
+/* large devices */
+@media (min-width: 992px) {
+	.box {
+		float: left;
+		width: 32%;
+	}
+
+	.box:nth-child(even) {
+		margin-right: 2%;
+		margin-left: 2%;
+	}
+}
+
+
+
+/* Responsive CSS */
+
+/* medium devices */
+@media (min-width: 768px) and (max-width: 991px) {
+	.box:nth-child(3n+1), .box:nth-child(3n+2) {
+		float: left;
+		width: 49%;
+	}
+
+	.box:nth-child(3n+3) {
+		float: left;
+		width: 100%;
+	}
+
+	.box:nth-child(3n+1) {
+		margin-right: 2%;
+	}
+}
+
+/* small devices */
+@media (max-width: 767px) {
+	.box {
+		float: left;
+		width: 100%;
+	}
+}
