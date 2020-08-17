@@ -50,6 +50,12 @@ body {
 }
 
 
+
+
+
+
+/* Responsive CSS */
+
 /* large devices */
 @media (min-width: 992px) {
 	.box {
@@ -62,10 +68,6 @@ body {
 		margin-left: 2%;
 	}
 }
-
-
-
-/* Responsive CSS */
 
 /* medium devices */
 @media (min-width: 768px) and (max-width: 991px) {
